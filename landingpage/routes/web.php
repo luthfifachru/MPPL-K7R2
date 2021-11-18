@@ -15,8 +15,28 @@ use App\Http\Controllers\EventsController;
 |
 */
 
+
+/*
+Model endpoint/routesnya
+
+/                       --  landing pagge
+/login                  --  login
+/register               --  regis, perlu login dulu
+/password               --  ganti password (setelah login)
+/event                  --  nampilin semua event, indexnya event
+/event/{id} <GET>       --  nampilin event ke {id}
+/event/create           --  bikin event
+/event/{id}/edit <GET>  --  nampilin page edit event {id}
+
+*buat backend*
+/event/{id} <UPDATE/PATCH>   --  update event {id}
+/event/{id} <DELETE>   --  delete event {id}
+
+*/
+
+
 Route::get('/', [PagesController::class, 'index']);
-Route::resource('/events',EventsController::class);
+Route::resource('/event',EventsController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

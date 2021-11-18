@@ -1,9 +1,6 @@
+@extends('layouts.app')
 
-
-{{-- Buat page index event dan page per eventnya pindah folder event gan --}}
-
-
-
+@section('content')
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Navbar section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
       <div class="container">
         <a class="navbar-brand" href="#">Homeschooling M.T KITA</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,12 +42,11 @@
     <!-- End Navbar -->
 
   </head>
-  <body>
+<body>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
     <!-- Main Content -->
-      <div class="container-fluid py-5 mt-5">
+    <div class="container-fluid py-5 mt-5">
           <div class="container">
             <div class="text-center">
               <h1 class="mb-5">Memperingati Hari Guru Nasional</h1>
@@ -64,5 +60,26 @@
           </div>
       </div>   
     <!-- End Main Content -->
-  </body>
+@foreach ($events as $event)    
+    <!-- Main Content -->
+    <div class="container-fluid py-5 mt-5">
+          <div class="container">
+            <div class="text-center">
+              <h1 class="mb-5">{{$event->title}}</h1>
+            </div>
+            <div class="card" style="width: 500px;">
+              <img src="/images/2.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <p class="card-text">{{$event->content}}</p>
+              </div>
+            </div>
+          </div>
+      </div>   
+    
+    {{--ntar buat link eventnya pake $event->id--}}
+    
+    <!-- End Main Content -->
+@endforeach
+</body>
 </html>
+@endsection
