@@ -25,7 +25,7 @@ class EventsController extends Controller
      */
     public function create()
     {
-        //
+        // return view('events.create');
     }
 
     /**
@@ -36,7 +36,24 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'image' => 'required|mimes:jpg,png,jpeg'
+        ]);
+
+        $imageName = uniqid() . '-' . preg_replace('/\s+/', '_', $request->title) . $request->image->extension();
+        $request->image->move(public_path('images'), $imageName);
+
+        Post::create
+        ([
+            'title' => $request->input('title'),
+            'content' => $request->input('content'),
+            'image_path' => $imageName,
+            'user_id' => auth()->user()->id
+        ]);
+        // add message success, 1:11:37
+        // return 
     }
 
     /**
@@ -47,7 +64,8 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('events.show')
+            -> with('event', Events::where('id', $id)->first());
     }
 
     /**
