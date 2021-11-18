@@ -24,3 +24,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/pageevent1', function(){
     return view('PageEvent1');
 });
+
+/*------------------------------------
+source = https://www.lab-informatika.com/menambahkan-halaman-update-password-laravel
+*/
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('password', 'App\Http\Controllers\PasswordController@edit')
+        ->name('user.password.edit');
+
+    Route::patch('password', 'App\Http\Controllers\PasswordController@update')
+        ->name('user.password.update');
+});
+//------------------------------------
