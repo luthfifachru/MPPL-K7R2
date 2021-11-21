@@ -41,9 +41,17 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/pageevent1', function(){
-    return view('PageEvent1');
-});
+Route::get('/pageevent1', [App\Http\Controllers\EventsController::class, 'index'])->name('events');
+
+Route::get('/about', function(){
+    return view('about');
+    });
+Route::get('/teachers', function(){
+    return view('teachers');
+    });
+Route::get('/contact', function(){
+    return view('contact');
+    });
 
 /*------------------------------------
 source = https://www.lab-informatika.com/menambahkan-halaman-update-password-laravel

@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -18,11 +21,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
+
 </head>
-<body>
+<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+        <header class="bg-gray-800 py-6">
+        <nav class="navbar navbar-expand-md navbar-dark bg-gray shadow-sm">
+            <div class="container mx-auto flex justify-between items-center">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
@@ -39,6 +45,21 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
+                        <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
+                                </li>
+                        <li class="nav-item">
+                                    <a class="nav-link" href="/about">About Us</a>
+                                </li>
+                        <li class="nav-item">
+                                    <a class="nav-link" href="/teachers">Teachers</a>
+                                </li>
+                        <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('events') }}">{{ __('Events') }}</a>
+                                </li>
+                        <li class="nav-item">
+                                    <a class="nav-link" href="/contact">Contact Us</a>
+                                </li>
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
@@ -74,9 +95,13 @@
                 </div>
             </div>
         </nav>
-
+    </header>
         <main class="py-4">
-            @yield('content')
+            <div>
+                @yield('content')
+            </div>
+            <div>
+                @include('layouts.footer')
         </main>
     </div>
 </body>
