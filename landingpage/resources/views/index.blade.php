@@ -110,10 +110,6 @@
         <h2 class="text-4xl font-bold py-10">
             Recent Event
         </h2>
-
-        <p class="m-auto w-4/5 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque exercitationem saepe enim veritatis, eos temporibus quaerat facere consectetur qui.
-        </p>
     </div>
 
 
@@ -121,7 +117,7 @@
         <div class="flex bg-yellow-700 text-gray-100 pt-10">
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class="uppercase text-xs">
-                    Aktivitas
+                  <h1>Reward untuk siswa SD dengan nilai terbaik</h1>
                 </span>
 
                 <h3 class="text-xl font-bold py-10">
@@ -136,7 +132,7 @@
             </div>
         </div>
         <div>
-            <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" alt="">
+            <img src="/images/Siswa SD Nilai Terbaik_2.jpeg" alt="">
         </div>
     </div>
 
@@ -150,20 +146,20 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
+            <img class="rounded-circle" src="/images/Siswa SD Nilai Terbaik.jpeg" alt="Generic placeholder image" width="250" height="250">
+            <h2>Reward siswa SD dg nilai terbaik</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
+            <img class="rounded-circle" src="/images/Prokes_TK_A.jpeg" alt="Generic placeholder image" width="250" height="250">
+            <h2>Prokes TKA thn ajaran 2021-2022</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Heading</h2>
+            <img class="rounded-circle" src="/images/Acara Akhir Tahun_TK_A.jpeg" alt="Generic placeholder image" width="auto" height="auto">
+            <h2>Acara akhir thn ajaran 2020-2021 TKA</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
