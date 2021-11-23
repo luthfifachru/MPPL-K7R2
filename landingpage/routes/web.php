@@ -53,6 +53,9 @@ Route::get('/contact', function(){
     return view('contact');
     });
 
+
+
+
 /*------------------------------------
 source = https://www.lab-informatika.com/menambahkan-halaman-update-password-laravel
 */

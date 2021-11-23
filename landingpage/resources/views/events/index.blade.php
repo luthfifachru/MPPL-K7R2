@@ -19,8 +19,21 @@
     <div class="container-fluid py-5 mt-5">
           <div class="container">
             <div class="text-center">
-              <h1 class="mb-5">Memperingati Hari Guru Nasional</h1>
+              <h1 class="mb-5">Event Post</h1>
             </div>
+
+            @if (Auth::check())
+              <div class="pt-15 w-4/5 m-3">
+                <a 
+                  href="/events/create" 
+                  class="bg-blue-500 uppercase text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
+                  Create Post
+                </a>
+              </div>
+            @endif
+            <br>
+            <br>
+            
             <div class="card" style="width: 500px;">
               <img src="/images/2.jpg" class="card-img-top" alt="">
               <div class="card-body">

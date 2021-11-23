@@ -146,13 +146,13 @@
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
-            <img class="rounded-circle" src="/images/Siswa SD Nilai Terbaik.jpeg" alt="Generic placeholder image" width="250" height="250">
+            <img class="rounded-circle" src="/images/Siswa SD Nilai Terbaik.jpeg" alt="Generic placeholder image" width="200" height="200">
             <h2>Reward siswa SD dg nilai terbaik</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img class="rounded-circle" src="/images/Prokes_TK_A.jpeg" alt="Generic placeholder image" width="250" height="250">
+            <img class="rounded-circle" src="/images/Prokes_TK_A.jpeg" alt="Generic placeholder image" width="200" height="200">
             <h2>Prokes TKA thn ajaran 2021-2022</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
