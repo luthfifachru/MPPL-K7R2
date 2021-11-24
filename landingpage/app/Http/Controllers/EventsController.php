@@ -125,6 +125,13 @@ class EventsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $event = Events::where('id', $id);
+
+        if (file_exists(public_path('images/' . $event->first()->image_path))) {
+            unlink(public_path('images/' . $event->first()->image_path));
+        }
+        $event->delete();
+        
+        return redirect('/events')->with('message', 'Your event has been deleted!'); 
     }
 }
