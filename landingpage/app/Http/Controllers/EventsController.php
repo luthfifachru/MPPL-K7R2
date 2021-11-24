@@ -53,7 +53,7 @@ class EventsController extends Controller
             'user_id' => auth()->user()->id
         ]);
         // add message success, 1:11:37
-        // return 
+        return redirect('/events')->with('message', 'Your event has been created!'); 
     }
 
     /**
@@ -76,7 +76,8 @@ class EventsController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('events.edit')
+            -> with('event', Events::where('id', $id)->first());
     }
 
     /**
@@ -88,7 +89,32 @@ class EventsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required|max:10000',
+            'image' => 'mimes:jpg,png,jpeg'
+        ]);
+
+        $imageName = Events::where('id', $id)->first()->image_path;
+        if($request->image){
+            if (file_exists(public_path('images/' . $imageName))) {
+                # code...
+                unlink(public_path('images/' . $imageName));
+            }
+            $imageName = uniqid() . '-' . preg_replace('/\s+/', '_', $request->title) . '.' . $request->image->extension();
+            $request->image->move(public_path('images'), $imageName);
+        }
+
+        Events::where('id', $id)
+            ->update([
+                'title' => $request->input('title'),
+                'content' => $request->input('content'),
+                'image_path' => $imageName,
+                'user_id' => auth()->user()->id
+            ]);
+        
+        return redirect('/events')->with('message', 'Your event has been created!'); 
+        // return dd($request->all());
     }
 
     /**
