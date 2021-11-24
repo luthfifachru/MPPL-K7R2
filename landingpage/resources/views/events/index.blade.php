@@ -53,7 +53,7 @@
             <div class="card" style="width: 500px;">
               <img src="/images/{{$event->image_path}}" class="card-img-top" alt="">
               <div class="card-body">
-                <p class="card-text">{{$event->content}}</p>
+                <p class="card-text">{{\Illuminate\Support\Str::words($event->content, 50 )}}</p>
               </div>
             </div>
           </div>
