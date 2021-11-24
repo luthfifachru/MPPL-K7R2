@@ -38,7 +38,7 @@ class EventsController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'content' => 'required',
+            'content' => 'required|max:10000',
             'image' => 'required|mimes:jpg,png,jpeg'
         ]);
 
