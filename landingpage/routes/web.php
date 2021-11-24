@@ -35,13 +35,11 @@ Model endpoint/routesnya
 */
 
 
-Route::get('/', [PagesController::class, 'index']);
+Route::get('/', [PagesController::class, 'index'])->name('home');
 Route::resource('/events',EventsController::class);
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/pageevents1', [App\Http\Controllers\EventsController::class, 'index'])->name('events');
+Route::get('/pageevents1', [App\Http\Controllers\EventsController::class, 'index']);
 
 Route::get('/about', function(){
     return view('about');

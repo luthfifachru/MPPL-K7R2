@@ -55,7 +55,7 @@
                                     <a class="nav-link" href="/teachers">Teachers</a>
                                 </li>
                         <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('events') }}">{{ __('Events') }}</a>
+                                    <a class="nav-link" href="/events">{{ __('Events') }}</a>
                                 </li>
                         <li class="nav-item">
                                     <a class="nav-link" href="/contact">Contact Us</a>
