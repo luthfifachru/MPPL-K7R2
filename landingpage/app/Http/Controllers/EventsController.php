@@ -42,10 +42,10 @@ class EventsController extends Controller
             'image' => 'required|mimes:jpg,png,jpeg'
         ]);
 
-        $imageName = uniqid() . '-' . preg_replace('/\s+/', '_', $request->title) . $request->image->extension();
+        $imageName = uniqid() . '-' . preg_replace('/\s+/', '_', $request->title) . '.' . $request->image->extension();
         $request->image->move(public_path('images'), $imageName);
 
-        Post::create
+        Events::create
         ([
             'title' => $request->input('title'),
             'content' => $request->input('content'),

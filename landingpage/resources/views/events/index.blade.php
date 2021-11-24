@@ -43,7 +43,7 @@
           </div>
       </div>   
     <!-- End Main Content -->
-@foreach ($events as $event)    
+@foreach ($events as $event)  
     <!-- Main Content -->
     <div class="container-fluid py-5 mt-5">
           <div class="container">
@@ -51,7 +51,7 @@
               <h1 class="mb-5">{{$event->title}}</h1>
             </div>
             <div class="card" style="width: 500px;">
-              <img src="/images/2.jpg" class="card-img-top" alt="">
+              <img src="/images/{{$event->image_path}}" class="card-img-top" alt="">
               <div class="card-body">
                 <p class="card-text">{{$event->content}}</p>
               </div>

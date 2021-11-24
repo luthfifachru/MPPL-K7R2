@@ -23,25 +23,25 @@ Model endpoint/routesnya
 /login                  --  login
 /register               --  regis, perlu login dulu
 /password               --  ganti password (setelah login)
-/event                  --  nampilin semua event, indexnya event
-/event/{id} <GET>       --  nampilin event ke {id}
-/event/create           --  bikin event
-/event/{id}/edit <GET>  --  nampilin page edit event {id}
+/events                  --  nampilin semua events, indexnya events
+/events/{id} <GET>       --  nampilin events ke {id}
+/events/create           --  bikin events
+/events/{id}/edit <GET>  --  nampilin page edit events {id}
 
 *buat backend*
-/event/{id} <UPDATE/PATCH>   --  update event {id}
-/event/{id} <DELETE>   --  delete event {id}
+/events/{id} <UPDATE/PATCH>   --  update events {id}
+/events/{id} <DELETE>   --  delete events {id}
 
 */
 
 
 Route::get('/', [PagesController::class, 'index']);
-Route::resource('/event',EventsController::class);
+Route::resource('/events',EventsController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/pageevent1', [App\Http\Controllers\EventsController::class, 'index'])->name('events');
+Route::get('/pageevents1', [App\Http\Controllers\EventsController::class, 'index'])->name('events');
 
 Route::get('/about', function(){
     return view('about');

@@ -23,7 +23,7 @@
 
 <div class="w-4/5 m-auto pt-20">
     <form 
-        action="/blog"
+        action="/events"
         method="POST"
         enctype="multipart/form-data">
         @csrf
@@ -35,8 +35,8 @@
             class="bg-transparent block border-b-2 w-full h-20 text-6xl outline-none">
 
         <textarea 
-            name="description"
-            placeholder="Description..."
+            name="content"
+            placeholder="Content..."
             class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
 
         <div class="bg-grey-lighter pt-15">
