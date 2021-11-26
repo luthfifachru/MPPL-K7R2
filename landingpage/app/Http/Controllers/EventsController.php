@@ -31,6 +31,11 @@ class EventsController extends Controller
          return view('events.create');
     }
 
+    public function createteacher()
+    {
+         return view('events.createteacher');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -52,6 +57,15 @@ class EventsController extends Controller
         ([
             'title' => $request->input('title'),
             'content' => $request->input('content'),
+            'image_path' => $imageName,
+            'user_id' => auth()->user()->id
+        ]);
+        // add message success, 1:11:37
+        return redirect('/events')->with('message', 'Your event has been created!'); 
+
+        Events::createteacher
+        ([
+            'Nama guru' => $request->input('title'),
             'image_path' => $imageName,
             'user_id' => auth()->user()->id
         ]);

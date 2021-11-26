@@ -54,12 +54,19 @@
               <img src="/images/{{$event->image_path}}" class="card-img-top" alt="">
               <div class="card-body">
                 <p class="card-text">{{\Illuminate\Support\Str::words($event->content, 50 )}}</p>
+                @if (Auth::check())
+              <div class="pt-15 w-4/5 m-3">
+                <a 
+                  href="/events/Detail" 
+                  class="bg-gray-500 uppercase text-white-100 text-xs font-extrabold py-3 px-5 rounded-2xl">
+                  Detail
+                </a>
+              </div>
+            @endif
               </div>
             </div>
           </div>
       </div>   
-    
-    {{--ntar buat link eventnya pake $event->id--}}
     
     <!-- End Main Content -->
 @endforeach
