@@ -25,10 +25,10 @@
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
 
-        <input class="form-control form-control-lg" type="title" placeholder="Title" aria-label=".form-control-lg example">
+        <input class="form-control form-control-lg" name="title" placeholder="Title" aria-label=".form-control-lg example">
 
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" name="Description" placeholder="Description" class="form-label" ></label>
+                <label for="exampleFormControlTextarea1" name="content" placeholder="content" class="form-label" ></label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
 
