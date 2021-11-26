@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Events extends Migration
+class Teachers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class Events extends Migration
      */
     public function up()
     {
-        Schema::create('events', function (Blueprint $table)
+        Schema::create('teachers', function (Blueprint $table)
         {
             $table->increments('id');
             $table->string('title');
-            $table->string('content', 10000);
             $table->string('image_path');
             $table->timestamps();
             $table->unsignedBigInteger('user_id');
@@ -32,6 +31,6 @@ class Events extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('teachers');
     }
 }

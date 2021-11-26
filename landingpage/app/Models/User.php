@@ -46,4 +46,8 @@ class User extends Authenticatable
     {
         return $this->hasMany(Events::class);
     }
+    public function teacher()
+    {
+        return $this->hasMany(Teacher::class);
+    }
 }
