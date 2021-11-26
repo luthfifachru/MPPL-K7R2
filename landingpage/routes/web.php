@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\EventsController;
+use App\Http\Controllers\TeacherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,7 @@ Model endpoint/routesnya
 
 Route::get('/', [PagesController::class, 'index'])->name('home');
 Route::resource('/events',EventsController::class);
+Route::resource('/teachers',TeacherController::class);
 Auth::routes();
 
 Route::get('/pageevents1', [App\Http\Controllers\EventsController::class, 'index']);
@@ -44,9 +46,9 @@ Route::get('/pageevents1', [App\Http\Controllers\EventsController::class, 'index
 Route::get('/about', function(){
     return view('about');
     });
-Route::get('/teachers', function(){
-    return view('teachers');
-    });
+// Route::get('/teachers', function(){
+//     return view('teachers');
+//     });
 Route::get('/contact', function(){
     return view('contact');
     });
