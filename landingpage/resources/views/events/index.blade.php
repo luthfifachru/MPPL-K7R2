@@ -58,7 +58,7 @@
               <div class="pt-15 w-4/5 m-3">
                 <a 
                   href="/events/Detail" 
-                  class="bg-gray-500 uppercase text-white-100 text-xs font-extrabold py-3 px-5 rounded-2xl">
+                  class="bg-blue-500 uppercase text-gray-100 text-xs font-extrabold py-3 px-5 rounded-2xl">
                   Detail
                 </a>
               </div>
