@@ -3,20 +3,26 @@
 @section ('content')
 
  <!--Slides-->
+  <div class="text-center">
+    <h1 class="font-bold mb-auto" style="font-size: 36px; font-family: sans-serif">Our Teacher</h1>
+  </div>
+
       <div class="carousel-inner" role="listbox">
         @if (Auth::check())
-          <div class="pt-15 w-4/5 m-3">
+          <div class="pt-15 mb-4">
             <a 
               href="/teachers/create" 
-              class="bg-blue-500 uppercase text-gray-100 text-xs font-extrabold py-3 px-5 rounded-3xl">
-              Create Post
+              class="bg-gray-400 uppercase text-gray-100 text-xs font-extrabold py-3 px-5 mr-5 rounded-2xl" style="float: right">
+              Add New Teacher
             </a>
           </div>
         @endif
+        <br>
+        <br>
         <!--Card List 1-->
         <div class="carousel-item active">
 
-          <div class="col-md-3" style="float:left">
+          <div class="col-md-3 mt-3" style="float:left">
            <div class="card mb-2">
               <img class="card-img-top"
                 src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
