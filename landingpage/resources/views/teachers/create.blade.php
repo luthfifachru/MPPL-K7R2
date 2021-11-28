@@ -25,7 +25,7 @@
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
 
-        <input class="form-control form-control-lg" type="Nama_guru" placeholder="Nama Guru" aria-label=".form-control-lg example">
+        <input class="form-control form-control-lg" name="title" type="Nama_guru" placeholder="Nama Guru" aria-label=".form-control-lg example">
 
             <div class="mb-3">
                 <label for="formFile" class="form-label"></label>
