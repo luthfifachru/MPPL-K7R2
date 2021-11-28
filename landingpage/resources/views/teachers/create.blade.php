@@ -22,7 +22,7 @@
 @endif
 
 <div class="w-4/5 m-auto pt-20">
-    <form action="/events" method="POST" enctype="multipart/form-data">
+    <form action="/teachers" method="POST" enctype="multipart/form-data">
         @csrf
 
         <input class="form-control form-control-lg" name="title" type="Nama_guru" placeholder="Nama Guru" aria-label=".form-control-lg example">
