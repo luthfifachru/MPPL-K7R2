@@ -50,7 +50,7 @@
 
         <button    
             type="delete"
-            class="uppercase mt-15 bg-gray-500 text-blue-100 text-lg font-extrabold py-4 px-8 rounded-2xl">
+            class="uppercase mt-15 bg-red-500 text-blue-100 text-lg font-extrabold py-4 px-8 rounded-2xl">
             Delete
         </button>
     </form>
