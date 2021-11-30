@@ -51,7 +51,7 @@
               <h1 class="mb-5">{{$event->title}}</h1>
             </div>
             <div class="card" style="width: 500px;">
-              <img src="/images/{{$event->image_path}}" class="card-img-top img-thumbnail" alt="">
+              <img src="/images/{{$event->image_path}}" class="img-fluid" alt="">
               <div class="card-body">
                 <p class="card-text">{{\Illuminate\Support\Str::words($event->content, 50 )}}</p>
                 @if (Auth::check())

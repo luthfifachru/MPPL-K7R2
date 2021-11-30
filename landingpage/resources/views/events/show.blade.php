@@ -20,7 +20,7 @@
     </div>
 
     <div>
-        <img src="IMAGE = {{$event->image_path}}" class="img-fluid" alt="">
+        <img src="/images/{{$event->image_path}}" class="rounded mx-auto d-block" alt="">
     </div>
     <span>{{$event->content}}</span>
 </div>
