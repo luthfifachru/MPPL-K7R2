@@ -56,9 +56,9 @@ Sistem aplikasi web yang berfungsi untuk memberikan informasi yang dibutuhkan se
 
 [`^ kembali ke atas ^`](#)
 
-![Use Case Diagram](./public/images/use case_diagram.png)
+![Use Case Diagram](./landingpage/public/images/use case_diagram.png)
 
-![Class Diagram] (./public/images/class_diagram.png)
+![Class Diagram] (./landingpage/public/images/class_diagram.png)
 
 ## Developer dan Jobdesc
 
