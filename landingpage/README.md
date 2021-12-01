@@ -2,8 +2,10 @@
 
 <p align="center">Projek membuat website untuk Homeschooling M.T.KITA untuk meningkatkan popularitas</p>
 
-| [Deskripsi Singkat](#deskripsi-singkat) |  | [Project Scope](#project-scope) | [Milestones](#milestones) | [Hasil dan Implementasi](#hasil-dan-implementasi) | [Developer dan Jobdesc](#developer-dan-jobdesc) |
-| :-------------------------------------: | :--------------------------------: | :-----------------------: | :-----------------------------------------------: | :---------------------------------------------: | 
+| [Deskripsi Singkat](#deskripsi-singkat) | [Project Scope](#project-scope) | [Milestones](#milestones) | [Feature](#feature) | [Hasil dan Implementasi](#hasil-dan-implementasi) | [Developer dan Jobdesc](#developer-dan-jobdesc) |
+| :-------------------------------------: | :-----------------------------: | :-----------------------: | :-----------------: | :-----------------------------------------------: | :---------------------------------------------: | 
+
+
 
 ## Deskripsi Singkat
 
@@ -31,12 +33,32 @@ Sistem aplikasi web yang berfungsi untuk memberikan informasi yang dibutuhkan se
 | Milestone 2 : Vertical Slice | Make ertical Slice |
 | Milestone 3 : Verify and Finishing | Finalize  |
 
+## Feature
+
+[`^ kembali ke atas ^`](#)
+
+| Feature | Description|
+| ------- | ---------- |
+| Landing Page |  |
+| Home Page|  |
+| About Us Page |  |
+| Teacher Page |  |
+| Event Page |  |
+| Contact Info |  |
+| Input Event |  |
+| Edit Event |  |
+| Delete Event |  |
+| Input Teacher |  |
+| Edit Teacher |  |
+| Delete Teacher |  |
 
 ## hasil-dan-implementasi
 
 [`^ kembali ke atas ^`](#)
 
-![Use Case Diagram](./public/use case_diagram.png)
+![Use Case Diagram](./public/images/use case_diagram.png)
+
+![Class Diagram] (./public/images/class_diagram.png)
 
 ## Developer dan Jobdesc
 
