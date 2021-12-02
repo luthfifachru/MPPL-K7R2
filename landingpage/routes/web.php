@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\TeacherController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

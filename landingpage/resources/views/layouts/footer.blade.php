@@ -61,7 +61,7 @@
 
        
     </div>
-    <p class="w-25 w-4/5 pb-3 m-auto text-xs text-gray-100 pt-6">
+    <p class="w-20 w-4/5 pb-3 m-auto text-xs text-gray-100 pt-6 text-center">
         Copyright 2021 Bimbel MT.KITA.
     </p>
 </footer>

@@ -21,6 +21,7 @@ class EventsController extends Controller
             ->with('events', Events::orderBy('updated_at', 'DESC')->get());
     }
 
+    
     /**
      * Show the form for creating a new resource.
      *
