@@ -21,7 +21,7 @@
     </div>
 @endif
 
-<div class="w-4/5 m-auto pt-10 px-5">
+<div class="w-4/5 m-auto pt-10">
     <form 
         action="/events/{{$event->id}}"
         method="POST"
@@ -42,11 +42,18 @@
             <input class="form-control" type="file" name="image" id="formFile">
         </div>
 
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <button    
             type="submit"
-            class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-2xl">
+            class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-bold py-4 px-8 rounded-2xl">
             Submit Post
         </button>
+    </form>
+    <form 
+        action="/events/{{ $event->id }}"
+        method="POST">
+        @csrf
+        @method('delete')
 
         <button    
             type="delete"
@@ -54,6 +61,7 @@
             Delete
         </button>
     </form>
+    </div>
 </div>
 
 @endsection

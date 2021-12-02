@@ -33,40 +33,36 @@
             @endif
             <br>
             <br>
-            
-            <div class="card" style="width: 500px;">
-              <img src="/images/2.jpg" class="card-img-top" alt="">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
+          
           </div>
       </div>   
-    <!-- End Main Content -->
+
 @foreach ($events as $event)  
     <!-- Main Content -->
-    <div class="container-fluid py-5 mt-5">
-          <div class="container">
-            <div class="text-center">
-              <h1 class="mb-5">{{$event->title}}</h1>
-            </div>
-            <div class="card" style="width: 500px;">
-              <img src="/images/{{$event->image_path}}" class="img-fluid" alt="">
-              <div class="card-body">
-                <p class="card-text">{{\Illuminate\Support\Str::words($event->content, 50 )}}</p>
-                @if (Auth::check())
-              <div class="pt-15 w-4/5 m-3">
-                <a 
-                  href="/events/{{$event->id}}/edit"
-                  class="bg-blue-500 uppercase text-gray-100 text-xs font-extrabold py-3 px-5 rounded-2xl">
-                  Detail
-                </a>
-              </div>
-            @endif
-              </div>
-            </div>
-          </div>
-      </div>   
+    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-3 border-b border-gray-200">
+        <div>
+            <img src="/images/{{$event->image_path}}" width="700" alt="">
+        </div>
+
+        <div class="m-auto sm:m-auto text-left w-4/5 block">
+            <h1 class="text-3xl font-extrabold text-gray-600">
+            {{$event->title}}
+            </h1>
+            
+            <p class="py-8 text-gray-500 text-s">
+            {{\Illuminate\Support\Str::words($event->content, 50 )}}
+            </p>
+            <br>
+            <br>
+
+            <a 
+              href="/events/{{$event->id}}"
+              class="bg-blue-500 uppercase text-gray-100 text-xs font-extrabold py-3 px-5 rounded-2xl">
+              Detail
+            </a>  
+        </div>
+    </div>
+</div>   
     
     <!-- End Main Content -->
 @endforeach

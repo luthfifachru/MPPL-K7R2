@@ -5,7 +5,7 @@
 @if (Auth::check())
         <div class="pt-10 mr-5" style="float: right;">
             <a 
-                href="/events{{$event->id}}" 
+                href="/events/{{$event->id}}/edit" 
                   class="bg-blue-500 uppercase text-gray-100 text-xs font-extrabold py-3 px-5 rounded-2xl">
                 Edit
             </a>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="card mt-3">
-        <div class="card-body">
+        <div class="card-body" style="max-width: 768px;">
         {{$event->content}}
         </div>
     </div>

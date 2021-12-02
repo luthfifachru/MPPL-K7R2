@@ -4,7 +4,7 @@
 <div class="w-4/5 m-auto text-left">
     <div class="py-15">
         <h1 class="text-6xl">
-            Edit Event
+            Edit Teacher
         </h1>
     </div>
 </div>
@@ -37,18 +37,25 @@
             <input class="form-control" type="file" name="image" id="formFile">
         </div>
 
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <button    
             type="submit"
             class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-bold py-4 px-8 rounded-2xl">
             Submit Post
         </button>
-
+    </form>
+    <form
+            action="/teachers/{{ $teacher->id }}"
+            method="POST">
+            @csrf
+            @method('delete')
         <button    
             type="delete"
             class="uppercase mt-15 bg-red-500 text-blue-100 text-lg font-extrabold py-4 px-8 rounded-2xl">
             Delete
         </button>
     </form>
+    </div>
 </div>
 
 @endsection
