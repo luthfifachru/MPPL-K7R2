@@ -30,6 +30,7 @@ Sistem aplikasi web yang berfungsi untuk memberikan informasi yang dibutuhkan se
 | Milestone | to do |
 | --------- | ----- |
 | Milestone 1 : Pre- Production | Meet with client |
+| ----------------------------- | Define Requirement |
 | Milestone 2 : Vertical Slice | Make ertical Slice |
 | Milestone 3 : Verify and Finishing | Finalize  |
 
