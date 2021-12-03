@@ -2,8 +2,8 @@
 
 <p align="center">Projek membuat website untuk Homeschooling M.T.KITA untuk meningkatkan popularitas</p>
 
-| [Deskripsi Singkat](#deskripsi-singkat) | [Project Scope](#project-scope) | [Milestones](#milestones) | [Feature](#feature) | [Hasil dan Implementasi](#hasil-dan-implementasi) | [Developer dan Jobdesc](#developer-dan-jobdesc) |
-| :-------------------------------------: | :-----------------------------: | :-----------------------: | :-----------------: | :-----------------------------------------------: | :---------------------------------------------: | 
+| [Deskripsi Singkat](#deskripsi-singkat) | [Project Scope](#project-scope) | [Milestones](#milestones) | [Feature](#feature) | [Technology](#technology) | [Tools](#tools) | [Hasil dan Implementasi](#hasil-dan-implementasi) | [Developer dan Jobdesc](#developer-dan-jobdesc) |
+| :-------------------------------------: | :-----------------------------: | :-----------------------: | :-----------------: | :-----------------------: | :-------------: | :-----------------------------------------------: | :---------------------------------------------: | 
 
 
 
@@ -30,7 +30,6 @@ Sistem aplikasi web yang berfungsi untuk memberikan informasi yang dibutuhkan se
 | Milestone | to do |
 | --------- | ----- |
 | Milestone 1 : Pre- Production | Meet with client |
-| ----------------------------- | Define Requirement |
 | Milestone 2 : Vertical Slice | Make ertical Slice |
 | Milestone 3 : Verify and Finishing | Finalize  |
 
@@ -38,20 +37,42 @@ Sistem aplikasi web yang berfungsi untuk memberikan informasi yang dibutuhkan se
 
 [`^ kembali ke atas ^`](#)
 
-| Feature | Description|
-| ------- | ---------- |
-| Landing Page |  |
-| Home Page|  |
-| About Us Page |  |
-| Teacher Page |  |
-| Event Page |  |
-| Contact Info |  |
-| Input Event |  |
-| Edit Event |  |
-| Delete Event |  |
-| Input Teacher |  |
-| Edit Teacher |  |
-| Delete Teacher |  |
+| Feature |
+| ------- |
+| Landing Page |
+| Home Page|
+| About Us Page |
+| Teacher Page |
+| Event Page |
+| Contact Info |
+| Input Event |
+| Edit Event |
+| Delete Event |
+| Input Teacher |
+| Edit Teacher |
+| Delete Teacher |
+
+## Technology
+
+[`^ kembali ke atas ^`](#)
+
+| Technology |
+| ---------- |
+| Laravel |
+| Bootstrap |
+| TailwindCss |
+| PhpMyadmin |
+| GitHub |
+
+## Tools
+
+[`^ kembali ke atas ^`](#)
+
+| Tools |
+| ----- |
+| Notion |
+| Figma |
+| Google Drive |
 
 ## hasil-dan-implementasi
 
