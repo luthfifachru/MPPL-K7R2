@@ -42,17 +42,17 @@ Route::resource('/events',EventsController::class);
 Route::resource('/teachers',TeacherController::class);
 Auth::routes();
 
-Route::get('/pageevents1', [App\Http\Controllers\EventsController::class, 'index']);
+// Route::get('/pageevents1', [App\Http\Controllers\EventsController::class, 'index']);
 
-Route::get('/about', function(){
-    return view('about');
-    });
+// Route::get('/about', function(){
+//     return view('about');
+//     });
 // Route::get('/teachers', function(){
 //     return view('teachers');
 //     });
-Route::get('/contact', function(){
-    return view('contact');
-    });
+// Route::get('/contact', function(){
+//     return view('contact');
+//     });
 
 
 
