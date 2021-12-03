@@ -26,19 +26,18 @@
             </h2>
             
             <p class="py-8 text-gray-500 text-s">
-                Visi Kami adalam Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur alias tempora laborum libero molestiae quasi dolor rem mollitia voluptatem deleniti explicabo magnam adipisci, harum dolore fugit blanditiis sunt quos reiciendis?
+                <b>VISI :</b>
+                <br>
+                Membentuk anak didik yang memiliki kecerdasan pikiran dan emosi serta memiliki karakter yang baik.
             </p>
 
             <p class="py-2 text-gray-500 text-s">
-                Misi Kami adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores optio alias hic necessitatibus sequi ex aspernatur aliquam vero atque nesciunt repellat dignissimos voluptate quidem assumenda consequatur quisquam eveniet nostrum, cum.
+                <b>MISI :</b>
+                <br>
+                Pendidikan berbasis rumah sekolah yang berlandaskan agama dan berkarakter serta merata untuk semua golongan masyarakat.
             </p>
             <br>
             <br>
-            <a 
-                href="/blog"
-                class="uppercase bg-blue-500 text-gray-100 text-s font-extrabold py-3 px-8 rounded-3xl">
-                Find Out More
-            </a>
         </div>
     </div>
 
