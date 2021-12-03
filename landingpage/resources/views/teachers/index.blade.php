@@ -25,7 +25,7 @@
 
             @foreach ($teachers as $teacher)
             <!--Card-->
-            <div class="rounded-full overflow-hidden shadow-lg bg-blue-900 rounded">
+            <div class="rounded-full overflow-hidden bg-gray rounded">
 
             @if (Auth::check())
             <a href="/teachers/{{$teacher->id}}/edit">
@@ -36,7 +36,7 @@
             @endif
 
               <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-2 text-white">{{$teacher->title}}</div>
+                <div class="font-bold text-xl mb-2 text-gray-800">{{$teacher->title}}</div>
               </div>
             </div>
             @endforeach
