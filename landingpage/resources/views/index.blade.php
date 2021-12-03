@@ -83,7 +83,7 @@
             <!--card-->
             <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
             <a href="events/{{$event->id}}">
-                <img class="rounded-t-lg" src="/images/{{$event->image_path}}" alt="" />
+                <img class="rounded-t-lg w-full h-80" src="/images/{{$event->image_path}}" alt="" />
             </a>
             <div class="p-5">
                 <a href="events/{{$event->id}}">
