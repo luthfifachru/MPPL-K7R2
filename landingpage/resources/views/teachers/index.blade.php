@@ -31,6 +31,8 @@
             <a href="/teachers/{{$teacher->id}}/edit">
               <img class="h-80 w-full rounded-full" src="/images/{{$teacher->image_path}}" alt="">
             </a>
+            @else
+            <img class="h-80 w-full rounded-full" src="/images/{{$teacher->image_path}}" alt="">
             @endif
 
               <div class="px-6 py-4">
