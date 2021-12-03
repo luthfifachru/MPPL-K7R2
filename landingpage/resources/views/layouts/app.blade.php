@@ -30,8 +30,8 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
-        <header class="fixed z-1 top-0 w-full bg-gray-800 py-6 ">
-        <nav class="navbar navbar-expand-md navbar-dark bg-gray shadow-sm">
+        <header class="top-0 w-full bg-gray-800 py-7 ">
+        <nav class=" navbar navbar-expand-md navbar-dark bg-gray-800 shadow-sm fixed top-0 inset-x-0">
             <div class="container mx-auto flex justify-between items-center">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -53,16 +53,16 @@
                                     <a class="nav-link" href="{{ route('home') }}">{{ __('Home') }}</a>
                                 </li>
                         <li class="nav-item">
-                                    <a class="nav-link" href="#about">About Us</a>
+                                    <a class="nav-link" href="/#about">{{ __('About Us') }}</a>
                                 </li>
                         <li class="nav-item">
-                                    <a class="nav-link" href="#teachers">Teachers</a>
+                                    <a class="nav-link" href="/#teachers">{{ __('Teachers') }}</a>
                                 </li>
                         <li class="nav-item">
-                                    <a class="nav-link" href="#events">{{ __('Events') }}</a>
+                                    <a class="nav-link" href="/#events">{{ __('Events') }}</a>
                                 </li>
                         <li class="nav-item">
-                                    <a class="nav-link" href="#contact">Contact Us</a>
+                                    <a class="nav-link" href="/#contact">{{ __('Contact Us') }}</a>
                                 </li>
                         @guest
                             @if (Route::has('login'))

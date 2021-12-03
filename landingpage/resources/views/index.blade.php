@@ -50,16 +50,24 @@
 
         <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
 
-    @foreach ($teachers as $teacher)
-    <!--Card-->
-    <div class="rounded overflow-hidden shadow-lg">
-      <img class="w-full" src="/images/{{$teacher->image_path}}" alt="Teachers">
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{{$teacher->title}}</div>
-      </div>
+            @foreach ($teachers as $teacher)
+            <!--Card-->
+            <div class="rounded overflow-hidden shadow-lg bg-gray rounded">
+              <img class="h-80 w-full" src="/images/{{$teacher->image_path}}" alt="Teachers">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2">{{$teacher->title}}</div>
+              </div>
+            </div>
+            @endforeach
+
+            </div> 
+
+            <div class="object-center text-center">
+                <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" href="/teachers">All Teachers</a>
+            </div>
+
+        </div>
     </div>
-    @endforeach
-    
 
 
 	<!--Section Events-->
@@ -70,30 +78,31 @@
         </h2>
     </div>
 
-     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
         
-
-    @foreach ($events as $event)
-        <!--card-->
-        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
-        <a href="{{$event->id}}">
-            <img class="rounded-t-lg" src="/images/{{$event->image_path}}" alt="" />
-        </a>
-        <div class="p-5">
+        @foreach ($events as $event)
+            <!--card-->
+            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
             <a href="{{$event->id}}">
-                <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">{{$event->title}}</h5>
+                <img class="rounded-t-lg" src="/images/{{$event->image_path}}" alt="" />
             </a>
-            <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">{{$event->content}}</p>
-            <a href="{{$event->id}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
+            <div class="p-5">
+                <a href="events/{{$event->id}}">
+                    <h5 class="text-gray-900 font-bold text-2xl tracking-tight mb-2 dark:text-white">{{$event->title}}</h5>
+                </a>
+                <p class="font-normal text-gray-700 mb-3 dark:text-gray-400">{{\Illuminate\Support\Str::words($event->content, 50 )}}</p>
+                <a href="events/{{$event->id}}" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more
                 <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </a>
-            </div>
-            </div>
-        </div>
-    @endforeach
-    
+                </a>
+                </div>
+                </div>
+           
+        @endforeach
+    </div> 
 
+    <div class="object-center text-center">
+        <a href="/events">More Events...</a>
+    </div>
 <br>
 <br>
 
