@@ -45,7 +45,7 @@
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
         <button    
             type="submit"
-            class="uppercase mt-15 bg-blue-500 text-gray-100 text-lg font-bold py-4 px-8 rounded-2xl">
+            class="uppercase mt-15 bg-green-500 text-gray-100 text-lg font-bold py-4 px-8 rounded-2xl">
             Submit Post
         </button>
     </form>

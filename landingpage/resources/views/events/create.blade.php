@@ -4,7 +4,7 @@
 <div class="w-4/5 m-auto text-left">
     <div class="py-15">
         <h1 class="text-5xl">
-            Create Post
+            Create Event
         </h1>
     </div>
 </div>
@@ -40,7 +40,7 @@
         <button    
             type="submit"
             class="uppercase mt-10 bg-blue-500 text-gray-100 text-m font-extrabold py-4 px-8 rounded-2xl">
-            Submit Post
+            Submit 
         </button>
     </form>
 </div>

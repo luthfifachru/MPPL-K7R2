@@ -15,7 +15,7 @@
 <div class="container-fluid">
     <div class="w-4/5 m-auto text-left">
         <div class="py-15">
-            <h1 class="text-left font-bold uppercase" style="font-size: 28px;">{{$event->title}}</h1>
+            <h1 class="text-left font-bold uppercase text-center" style="font-size: 28px;">{{$event->title}}</h1>
         </div>
     </div>
 
