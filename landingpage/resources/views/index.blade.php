@@ -15,12 +15,12 @@
     </div>
 
 
-    <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
+    <div  id="about" class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
             <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" width="700" alt="">
         </div>
 
-        <div id="about" class="m-auto sm:m-auto text-left w-4/5 block">
+        <div class="m-auto sm:m-auto text-left w-4/5 block">
             <h2 class="text-3xl font-extrabold text-gray-600">
                Visi Misi Kami
             </h2>
