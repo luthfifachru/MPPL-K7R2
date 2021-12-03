@@ -82,7 +82,7 @@
         @foreach ($events as $event)
             <!--card-->
             <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:bg-gray-800 dark:border-gray-700">
-            <a href="{{$event->id}}">
+            <a href="events/{{$event->id}}">
                 <img class="rounded-t-lg" src="/images/{{$event->image_path}}" alt="" />
             </a>
             <div class="p-5">
