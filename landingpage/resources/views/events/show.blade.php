@@ -24,8 +24,8 @@
     </div>
 
     <div class="card mt-3">
-        <div class="card-body" style="max-width: 768px;">
-        {{$event->content}}
+        <div class="card-body">
+        {!! nl2br(e($event->content)) !!}
         </div>
     </div>
 </div>
